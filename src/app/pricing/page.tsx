@@ -19,6 +19,11 @@ export default function PricingPage() {
       upgradeTier('Free');
       return;
     }
+    if (plan.id === 'pro') {
+      window.open('https://clipmindai.gumroad.com/l/wcjtvs', '_blank');
+      upgradeTier('Pro');
+      return;
+    }
     setSelectedPlan(plan);
     setShowCheckoutModal(true);
   };
